@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Purchase · HSA Demo{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Purchase</h2>
+  <div class="row">
+    <label>Card
+      <select id="tx-card-select" class="wide-select"></select>
+    </label>
+  </div>
+  <div class="row">
+    <label>Merchant <input id="merchant" placeholder="Acme Pharmacy" /></label>
+    <label>MCC
+      <select id="mcc"></select>
+    </label>
+  </div>
+  <div class="row">
+    <label>Total Amount (USD) <input id="amount" placeholder="0.00" readonly /></label>
+    <button id="btn-add-item">+ Add Item</button>
+  </div>
+  <div id="items"></div>
+  <div class="row">
+    <button id="btn-purchase">Submit Purchase</button>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='shared.js') }}"></script>
+<script src="{{ url_for('static', filename='purchase.js') }}"></script>
+{% endblock %}

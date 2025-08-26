@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "code": "RX_PRESCRIPTION",
+      "name": "Prescription medication",
+      "eligible": true
+    },
+    {
+      "code": "OTC_MED",
+      "name": "Over-the-counter medication (w/ Rx when required)",
+      "eligible": true
+    },
+    {
+      "code": "BANDAGE",
+      "name": "Bandages & first aid",
+      "eligible": true
+    },
+    {
+      "code": "INSULIN",
+      "name": "Insulin",
+      "eligible": true
+    },
+    {
+      "code": "COPAY_DOCTOR",
+      "name": "Doctor visit copay",
+      "eligible": true
+    },
+    {
+      "code": "DENTAL",
+      "name": "Dental care expense",
+      "eligible": true
+    },
+    {
+      "code": "VISION",
+      "name": "Vision products and exams",
+      "eligible": true
+    },
+    {
+      "code": "MENTAL_HEALTH",
+      "name": "Mental health therapy",
+      "eligible": true
+    },
+    {
+      "code": "FSA_INELIGIBLE_VITAMINS",
+      "name": "General-purpose vitamins",
+      "eligible": false
+    },
+    {
+      "code": "COSMETIC",
+      "name": "Cosmetic procedures",
+      "eligible": false
+    },
+    {
+      "code": "GYM_MEMBERSHIP",
+      "name": "General gym membership",
+      "eligible": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Home · HSA Demo{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Welcome</h2>
+  <p>This is a local-only demo of an HSA app.</p>
+  {% if session.get('user_id') %}
+    <p>You're logged in. Use the navigation to continue.</p>
+  {% else %}
+    <p>Please <a href="{{ url_for('page_login') }}">log in</a> or <a href="{{ url_for('page_create_account') }}">create an account</a>.</p>
+  {% endif %}
+</section>
+{% endblock %}

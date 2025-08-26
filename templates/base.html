@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}HSA Demo{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header>
+    <h1>🏥 HSA Demo (Local Only)</h1>
+    {% if session.get('user_id') %}
+    <nav class="nav">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('page_deposit') }}">Deposit Funds</a>
+      <a href="{{ url_for('page_card') }}">Issue Card</a>
+      <a href="{{ url_for('page_purchase') }}">Purchase</a>
+      <form method="post" action="{{ url_for('page_logout') }}" style="display:inline;">
+        <button type="submit">Logout</button>
+      </form>
+    </nav>
+    {% else %}
+    <nav class="nav">
+      <a href="{{ url_for('page_login') }}">Login</a>
+      <a href="{{ url_for('page_create_account') }}">Create Account</a>
+    </nav>
+    {% endif %}
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  
+  {% block scripts %}{% endblock %}
+</body>
+</html>

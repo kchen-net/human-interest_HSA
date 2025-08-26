@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Create Account · HSA Demo{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Create Account</h2>
+  <div class="row">
+    <label>Name <input id="name" placeholder="Jane Doe" /></label>
+    <label>Email <input id="email" placeholder="jane@example.com" /></label>
+    <label>Password <input id="password" type="password" placeholder="••••••••" /></label>
+    <button id="btn-register">Create</button>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='shared.js') }}"></script>
+<script src="{{ url_for('static', filename='register.js') }}"></script>
+{% endblock %}

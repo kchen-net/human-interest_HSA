@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Issue Card · HSA Demo{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Issue Virtual Card</h2>
+  <div class="row">
+    <label>Cardholder Name <input id="cardholder-name" placeholder="Name on Card" /></label>
+    <button id="btn-card">Issue Card</button>
+  </div>
+
+  <div class="row">
+    <h3>My Cards</h3>
+    <table id="cards-table" class="table">
+      <thead>
+        <tr><th>Card Number (PAN)</th><th>Cardholder Name</th><th>Exp</th><th>Status</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='shared.js') }}"></script>
+<script src="{{ url_for('static', filename='card.js') }}"></script>
+{% endblock %}

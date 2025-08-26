@@ -1,0 +1,40 @@
+{
+  "eligible_mccs": [
+    {
+      "mcc": "5912",
+      "label": "Drug Stores and Pharmacies"
+    },
+    {
+      "mcc": "8011",
+      "label": "Doctors (NEC)"
+    },
+    {
+      "mcc": "8021",
+      "label": "Dentists and Orthodontists"
+    },
+    {
+      "mcc": "8041",
+      "label": "Chiropractors"
+    },
+    {
+      "mcc": "8042",
+      "label": "Optometrists and Ophthalmologists"
+    },
+    {
+      "mcc": "8062",
+      "label": "Hospitals"
+    },
+    {
+      "mcc": "8071",
+      "label": "Medical & Dental Labs"
+    },
+    {
+      "mcc": "8099",
+      "label": "Medical Services (NEC)"
+    },
+    {
+      "mcc": "5047",
+      "label": "Medical Equipment & Supplies"
+    }
+  ]
+}

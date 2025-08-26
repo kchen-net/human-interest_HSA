@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Deposit Funds · HSA Demo{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Deposit Funds</h2>
+  <div class="row">
+    <div>Current balance: $<span id="current-balance">--</span></div>
+  </div>
+  <div class="row">
+    <label>Amount (USD) <input id="deposit-amount" placeholder="100.00" /></label>
+    <button id="btn-deposit">Deposit</button>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='shared.js') }}"></script>
+<script src="{{ url_for('static', filename='deposit.js') }}"></script>
+{% endblock %}
